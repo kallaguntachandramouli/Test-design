@@ -1,0 +1,24 @@
+Boundary Value Analysis (BVA)Boundary Value Analysis is a black-box testing technique that focuses on testing the boundaries of input values. 
+It's based on the idea that errors often occur at the boundaries of acceptable input ranges.
+1. Error detection: BVA helps detect errors that occur at the boundaries of input ranges.
+2. Efficient testing: By testing boundaries, you can identify potential issues with minimal test cases.
+
+Test Case for BVA:Suppose we have a password field that accepts passwords between 8 to 20 characters long.
+Testcase           Description                          Input             Exepected
+1                 valid password len min                7char             accepted
+2                  valid password len max                20char            accepted
+3                   invalid password len below min        17 char           not accepted
+4                    invalid password  above max          21 char           not accepted
+ (BVA) Advantages:
+1. Effective error detection: BVA is particularly effective in detecting errors that occur at the boundaries of input ranges.
+2. Efficient testing: By testing boundary values, testers can identify potential issues with minimal test cases.
+3. Reduced testing time: BVA helps reduce testing time by focusing on critical boundary values.
+4. Improved test coverage: BVA ensures that boundary values are thoroughly tested, reducing the risk of overlooking critical test cases.
+5. Simple to apply: BVA is a straightforward technique to apply, making it accessible to testers of various experience levels.
+
+ (BVA) Disadvantages:
+1. Limited scope: BVA focuses on boundary values and might not catch errors that occur within the valid range.
+2. Difficulty in identifying boundaries: Identifying correct boundaries can be challenging, especially for complex systems or unclear requirements.
+3. Not suitable for all systems: BVA might not be effective for systems with non-numeric or non-ordered input data.
+4. Dependence on requirements: BVA's effectiveness relies heavily on accurate and complete requirements.
+5. Potential for false positives: BVA might identify false positives if the boundaries are not correctly defined or if the system behaves unexpectedly.
