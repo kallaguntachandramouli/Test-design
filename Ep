@@ -1,0 +1,29 @@
+Equivalence Partitioning (EP)Equivalence Partitioning is a black-box testing technique that divides input data into partitions based on the specification.
+Each partition represents a set of inputs that are expected to be treated similarly by the system.
+
+1. Reduced test cases: EP helps reduce the number of test cases while still covering the essential scenarios.
+2. Improved test coverage: EP ensures that all possible input scenarios are considered.
+
+Test Case for EP:Suppose we have a field that accepts ages between 18 to 100.
+
+ testcase               Description                       Input         Expected
+1                    valid age range                       25                  accepted
+2                    valid age below range                 17                  not accepted
+3                    valid age above range                101                not accepted
+ identified three partitions:
+1. Valid age range (18-100)
+2. Below valid age range (<18)
+3. Above valid age range (>100)
+Advantages
+1. Reduced number of test cases: EP helps reduce the number of test cases, making testing more efficient.
+2. Improved test coverage: EP ensures that all possible input scenarios are considered, reducing the risk of overlooking critical test cases.
+3. Time-saving: By testing representative values from each partition, testers can save time and effort.
+4. Increased productivity: EP enables testers to focus on more complex testing areas, improving overall productivity.
+5. Better defect detection: EP helps detect defects that might occur due to incorrect partitioning of input data.
+
+ (EP) Disadvantages:
+1. Overlapping partitions: If partitions overlap, it can lead to redundant testing or missed test cases.
+2. Difficulty in identifying partitions: Identifying correct partitions can be challenging, especially for complex systems or unclear requirements.
+3. Limited applicability: EP might not be effective for systems with complex business rules or non-functional requirements.
+4. Dependence on requirements: EP's effectiveness relies heavily on accurate and complete requirements.
+5. Potential for missed edge cases: EP might not catch edge cases that fall between partitions or at the boundaries.
